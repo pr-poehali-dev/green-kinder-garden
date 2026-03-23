@@ -36,12 +36,17 @@ const GOALS = [
 ];
 
 const FAMILIES = [
-  { name: "Семья Петровых", child: "Миша, 5 лет", trees: 2, emoji: "🌳🌳" },
-  { name: "Семья Ивановых", child: "Даша, 4 года", trees: 1, emoji: "🌿" },
-  { name: "Семья Сидоровых", child: "Артём, 6 лет", trees: 3, emoji: "🌳🌳🌳" },
-  { name: "Семья Козловых", child: "Маша, 5 лет", trees: 2, emoji: "🌳🌳" },
-  { name: "Семья Новиковых", child: "Ваня, 4 года", trees: 1, emoji: "🌿" },
-  { name: "Семья Морозовых", child: "Соня, 6 лет", trees: 2, emoji: "🌳🌳" },
+  { name: "Семья Пестеревых", child: "София и Эркин", emoji: "🌳🌳" },
+  { name: "Семья Толстоуховых", child: "Айна", emoji: "🌿" },
+  { name: "Федосеев Эркин", child: "", emoji: "🌱" },
+  { name: "Кирсанов Вася", child: "", emoji: "🌿" },
+  { name: "Андреева Куннэй", child: "", emoji: "🍀" },
+  { name: "Петров Тимур", child: "", emoji: "🌳" },
+  { name: "Данилова Милана", child: "", emoji: "🌸" },
+  { name: "Голикова Намыына", child: "", emoji: "🌿" },
+  { name: "Луковцев Мичил", child: "", emoji: "🌱" },
+  { name: "Родионов Айхал", child: "", emoji: "🍃" },
+  { name: "Эверстова Айаана", child: "", emoji: "🌼" },
 ];
 
 const GALLERY_IMAGES = [
@@ -423,10 +428,12 @@ const Index = () => {
                     <h3 className="text-xl font-black" style={{ color: "#1f2937" }}>
                       {family.name}
                     </h3>
-                    <p className="text-sm font-semibold mt-1 flex items-center gap-1" style={{ color: "#6b7280" }}>
-                      <Icon name="User" size={14} />
-                      {family.child}
-                    </p>
+                    {family.child && (
+                      <p className="text-sm font-semibold mt-1 flex items-center gap-1" style={{ color: "#6b7280" }}>
+                        <Icon name="User" size={14} />
+                        {family.child}
+                      </p>
+                    )}
                   </div>
                   <span className="text-3xl">{family.emoji}</span>
                 </div>
@@ -436,7 +443,7 @@ const Index = () => {
                 >
                   <Icon name="TreePine" size={16} color="#16a34a" />
                   <span className="text-sm font-bold" style={{ color: "#16a34a" }}>
-                    Посажено деревьев: {family.trees}
+                    Участник проекта 🌿
                   </span>
                 </div>
               </div>
