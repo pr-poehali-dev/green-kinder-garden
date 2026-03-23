@@ -193,9 +193,9 @@ const Index = () => {
             }}
             className="font-bold mb-4 drop-shadow-sm"
           >
-            ЭкоЧэлгий
+            Создание экологической среды
             <br />
-            <span style={{ color: "#15803d" }}>экологический проект детского сада</span>
+            <span style={{ color: "#15803d" }}>в детском саду</span>
           </h1>
 
           <p
