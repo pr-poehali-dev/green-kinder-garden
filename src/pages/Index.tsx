@@ -115,7 +115,7 @@ const Index = () => {
               style={{ fontFamily: "'Caveat', cursive", color: "#fff" }}
               className="text-2xl font-bold leading-none"
             >
-              Зелёный садик
+              ЭкоЧэлгий
             </span>
           </button>
           <div className="hidden md:flex gap-1">
